@@ -1,4 +1,3 @@
-// axiosInstance.ts
 import axios, {
   AxiosError,
   AxiosHeaders,
