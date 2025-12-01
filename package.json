@@ -7,11 +7,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
     "jsdom": "^27.0.1",
+    "prettier": "^3.7.3",
     "typescript": "~5.9.3",
     "vite": "^7.2.4",
     "vitest": "^3.2.4"
