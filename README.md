@@ -1,5 +1,7 @@
 # Safe Axios Client
 
+[![CI Check](https://github.com/Kimbyul88/safe_axios_client/actions/workflows/test.yml/badge.svg)](https://github.com/Kimbyul88/safe_axios_client/actions/workflows/test.yml)
+
 > **JWT 인증 환경에서 발생하는 '경쟁 상태(Race Condition)'를 해결하기 위해 설계된 HTTP 클라이언트 라이브러리**
 
 이 라이브러리는 기존 **'대학 축제 웹 서비스'** 운영 중 발생했던 토큰 만료 및 요청 유실 문제를 해결하기 위해, 핵심 통신 로직을 추출하여 리팩토링한 프로젝트입니다.
