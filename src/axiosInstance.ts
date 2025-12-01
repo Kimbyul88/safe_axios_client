@@ -4,6 +4,15 @@ import axios, {
   type InternalAxiosRequestConfig,
 } from "axios";
 
+/**
+ * JWT 기반 인증 환경에서 401 에러 발생 시 토큰을 자동으로 갱신하고
+ * 대기 중인 요청을 처리하는 Axios 인스턴스입니다.
+ * * @description
+ * - Access Token 만료 시 Refresh Token을 사용해 갱신
+ * - 갱신 중 발생하는 요청은 메모리 큐(Subscribers)에 적재 후 일괄 처리
+ * - Race Condition 방지 로직 포함
+ */
+
 type Realm = "user" | "admin";
 
 interface RealmConfig {
